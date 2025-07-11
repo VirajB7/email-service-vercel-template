@@ -1,8 +1,8 @@
 import express from "express";
-import { EmailService } from "./EmailService";
-import { MockProviderA } from "./providers/MockProviderA";
-import { MockProviderB } from "./providers/MockProviderB";
-import { EmailRequest } from "./types/Email";
+import { EmailService } from "../EmailService";
+import { MockProviderA } from "../providers/MockProviderA";
+import { MockProviderB } from "../providers/MockProviderB";
+import { EmailRequest } from "../types/Email";
 
 const app = express();
 const emailService = new EmailService([new MockProviderA(), new MockProviderB()]);
