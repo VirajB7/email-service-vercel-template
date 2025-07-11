@@ -1,8 +1,8 @@
 import express from "express";
-import { EmailService } from "../EmailService";
-import { MockProviderA } from "../providers/MockProviderA";
-import { MockProviderB } from "../providers/MockProviderB";
-import { EmailRequest } from "../types/Email";
+import { EmailService } from "../src/EmailService";
+import { MockProviderA } from "../src/providers/MockProviderA";
+import { MockProviderB } from "../src/providers/MockProviderB";
+import { EmailRequest } from "../src/types/Email";
 
 const app = express();
 const emailService = new EmailService([new MockProviderA(), new MockProviderB()]);
@@ -20,4 +20,5 @@ app.post("/api/send-email", async (req, res) => {
 });
 
 app.get("/", (_, res) => res.send("🚀 Resilient Email Service is live"));
+
 export default app;
