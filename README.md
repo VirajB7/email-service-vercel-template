@@ -28,7 +28,7 @@ A robust, fault-tolerant email dispatching API built with TypeScript and Express
 ---
 
 ## 📁 Project Structure
-
+```
 email-service-vercel-template/
 ├── src/
 │   ├── server.ts               # Express API entry point
@@ -45,7 +45,7 @@ email-service-vercel-template/
 ├── package.json                # NPM dependencies and scripts
 ├── tsconfig.json               # TypeScript compiler configuration
 
-
+```
 
 ---
 
