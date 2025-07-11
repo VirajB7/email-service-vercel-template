@@ -31,14 +31,20 @@ A robust, fault-tolerant email dispatching API built with TypeScript and Express
 
 email-service-vercel-template/
 ├── src/
-│ ├── server.ts # Express API entry
-│ ├── EmailService.ts # Core logic for sending emails
-│ ├── providers/ # Mock email providers A & B
-│ ├── utils/ # Logger and CircuitBreaker
-│ └── types/Email.ts # Shared type definitions
-├── vercel.json # Vercel deployment config
-├── package.json # NPM dependencies
-├── tsconfig.json # TypeScript config
+│   ├── server.ts               # Express API entry point
+│   ├── EmailService.ts         # Core logic for sending emails
+│   ├── providers/              # Mock email providers A & B
+│   │   ├── MockProviderA.ts
+│   │   └── MockProviderB.ts
+│   ├── utils/                  # Logger and CircuitBreaker utilities
+│   │   ├── Logger.ts
+│   │   └── CircuitBreaker.ts
+│   └── types/
+│       └── Email.ts            # Shared type definitions
+├── vercel.json                 # Vercel deployment configuration
+├── package.json                # NPM dependencies and scripts
+├── tsconfig.json               # TypeScript compiler configuration
+
 
 
 ---
