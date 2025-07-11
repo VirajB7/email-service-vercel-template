@@ -86,15 +86,15 @@ npm run dev
 The service will run at http://localhost:3000
 
 
-✅ Assumptions
-This project uses mock providers to simulate failures and success.
+## ✅ Assumptions
+-This project uses mock providers to simulate failures and success.
 
-The idempotencyKey is expected to be globally unique per email request.
+-The idempotencyKey is expected to be globally unique per email request.
 
-State (rate limits, email cache) is stored in-memory — suitable for serverless demos, not production.
+-State (rate limits, email cache) is stored in-memory — suitable for serverless demos, not production.
 
-Email sending simulates ~70%/50% failure rate for retry testing.
+-Email sending simulates ~70%/50% failure rate for retry testing.
 
 
-👤 Author
-Built by [Busa Viraj] — feel free to fork and extend this for your own email backend or service reliability use case!
+## 👤 Author
+-Built by [Busa Viraj] — feel free to fork and extend this for your own email backend or service reliability use case!
